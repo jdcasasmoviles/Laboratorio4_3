@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab_4_3_Act3</string>
+    <string name="action_settings">Settings</string>
+    <string name="progress_title">Progreso Tarea</string>
+    <string name="btnService">Intent Service</string>
+    <string name="title_activity_second">Segunda Activity</string>
+    <string name="btnEjecutar">btnEjecutar</string>
+</resources>

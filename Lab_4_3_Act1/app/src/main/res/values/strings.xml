@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab_4_3_Act1</string>
+    <string name="action_settings">Settings</string>
+    <string name="progress_title">Progreso Tarea</string>
+    <string name="btnSinHilos">Ejecución sin hilos</string>
+    <string name="btnHilo">Ejecutar Hilo</string>
+    <string name="btnAsyncTask">Ejecución AsyncTask</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="btnAsyncDialog">AsyncTask + ProgressDialog</string>
+</resources>

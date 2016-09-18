@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jdcasas.lab_4_3_act1.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ProgressBar
+        android:id="@+id/pbarProgreso"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_below="@+id/lblProgressTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp" />
+    <Button
+        android:id="@+id/btnSinHilos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnSinhilos"
+        android:text="Ejecución sin hilos"
+        android:textSize="16dp"
+        android:layout_below="@+id/pbarProgreso"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btnHilo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnHilo"
+        android:text="@string/btnHilo"
+        android:textSize="16dp"
+        android:layout_below="@+id/btnSinHilos"
+        android:layout_alignLeft="@+id/pbarProgreso"
+        android:layout_alignStart="@+id/pbarProgreso" />
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btnAsyncTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnAsyncTask"
+        android:text="@string/btnAsyncTask"
+        android:textSize="16dp"
+        android:layout_below="@+id/btnHilo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnCancelar"
+        android:text="@string/btnCancelar"
+        android:textSize="16dp"
+        android:layout_above="@+id/btnAsyncDialog"
+        android:layout_toRightOf="@+id/btnSinHilos"
+        android:layout_toEndOf="@+id/btnSinHilos" />
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btnAsyncDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnAsyncDialog"
+        android:text="@string/btnAsyncDialog"
+        android:textSize="16dp"
+        android:layout_below="@+id/btnAsyncTask"
+        android:layout_alignLeft="@+id/btnHilo"
+        android:layout_alignStart="@+id/btnHilo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/progress_title"
+        android:id="@+id/lblProgressTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnAsyncTask"
+        android:layout_alignEnd="@+id/btnAsyncTask"
+        android:textSize="22dp" />
+</RelativeLayout>
